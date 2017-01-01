@@ -1,0 +1,8 @@
+dracut rootfs squashfs+overlayfs module
+
+It mounts $NEWROOT/squashfs.img to /live/squash and makes
+read only squashfs writable via overlayfs.
+
+The original root, squashfs.img and the tmpfs will be mounted
+at /live/image, /live/squash and /live/cow in the final rootfs.
+
